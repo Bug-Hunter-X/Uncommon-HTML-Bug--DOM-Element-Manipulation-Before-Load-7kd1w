@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    //This is the bug. The div element is created before the script is executed
+    document.getElementById("myDiv").style.display = "none"; 
+  </script>
+</body>
+</html>
